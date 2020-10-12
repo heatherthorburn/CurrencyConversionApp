@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <link rel="icon" sizes="192x192" href="icon.png" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <link rel="shortcut icon" href="weeicon.png" type="image/x-icon" />
+
+    <link rel="icon" sizes="192x192" href="icon.png" />
+    <title>BreakOut</title>
+    <style>
+        #options {
+            text-align: center;
+            width: 100%;
+            height: 7%;
+            position: absolute;
+            z-index: 4;
+            bottom: 0;
+            display: grid;
+            grid-template-columns: 24vw 24vw 24vw 24vw;
+            font-size: 150%;
+        }
+
+        #sensors {
+            color: red;
+            font-size: 55%;
+            overflow-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+
+<div id = "canvas-wrapper">
+    <canvas id = "breakout"></canvas>
+</div>
+
+<div id = "parent">
+    <div id = "child">
+        Game Over :(</div>
+</div>
+
+<div id = "options">
+    <div id = "pause">&#9646;&#9646;</div>
+    <div id = "play"> &#9658;</div>
+    <div id = "restart">&#8634;	</div>
+    <div id = "sensors">Enable Sensors</div>
+</div>
+
+<script src="Model.js"></script>
+<script src="View.js"></script>
+<script src="Controller.js"></script>
+</body>
+</html>
+
+
+
+

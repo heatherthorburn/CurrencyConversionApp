@@ -1,0 +1,44 @@
+html {
+    background: black;
+    color: chartreuse;
+    overflow: hidden;
+}
+
+#canvas-wrapper {
+
+}
+
+canvas {
+    border: 1px solid chartreuse;
+    position: absolute;
+    z-index: 1;
+    background: grey;
+}
+
+#parent {
+    width: 50%;
+    height: 15%;
+    background: black;
+    z-index: 3;
+    text-align: center;
+    display: table;
+    font-family: FreeMono;
+    font-weight: bolder;
+    border: 1px solid chartreuse;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    visibility: hidden;
+}
+
+#child {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+
+
